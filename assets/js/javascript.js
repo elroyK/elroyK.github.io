@@ -28,15 +28,11 @@ function doSomething2()
 {
     if(flick2 == 1)
     {
-        menudown2.style.bottom = '150px';
-        menudown2.style.background-color = '#113d70';
-        menudown2.style.color = 'rgb(244, 244, 244)';
+        menudown2.style.bottom = '150px'; 
     flick2 = 0;
     }
     else{
-         menudown2.style.bottom = '205px';
-         menudown2.style.background-color = 'rgb(244, 244, 244)';
-         menudown2.style.color = '#113d70';
+         menudown2.style.bottom = '205px'; 
     flick2 = 1;
     }
     
