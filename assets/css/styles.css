@@ -19,7 +19,11 @@ h1 {
 
 .logo {
     text-align: center;
-    margin: 25px 0;
+    margin: 20px 15px 0;
+}
+
+.logo img {
+    width: 100px;
 }
 
 img.illustration-main {
@@ -220,7 +224,7 @@ p {
 .white-line {
     width: 176px;
     position: absolute;
-    bottom: 19px;
+    bottom: 20px;
     left: 10px;
     height: 2px;
     background-color: rgb(251, 251, 251);
