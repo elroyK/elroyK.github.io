@@ -9,49 +9,53 @@
   <meta name="author" content="">
 
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/liste.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <script src="https://use.fontawesome.com/415c4aae00.js"></script>
 </head>
 
 <body>
 	<div id="logo"><img src="./assets/images/dark-red/logo.svg"></div>
+	<div id="home">
+		<a href="index.html">
+			<img src="./assets/images/dark-red/home.svg">
+		</a>
+	</div>
+	</a>
 	<div id="wrapper">
 		<div id="left-part" class="side-part main-part">
-			<h2>Ajouter/retirer<br>des aliments</h2>
 			<div id="left-block" class="side-block">
-				<div class="separator"></div>
-				<img id="fridge-add" class="left-button" src="./assets/images/add-to-fridge.svg">
-				<img id="fridge-remove" class="left-button" src="./assets/images/remove-from-fridge.svg">
 			</div>
 		</div>
 		<div id="middle-block" class="main-part">
-			<h1>Mes frigos</h1>
-			<div id="fridges">
-				<div class="fridge">
-					<img src="./assets/images/fridge.svg">
-					<h3>Cuisine</h3>
-				</div>
-				<div class="fridge">
-					<img src="./assets/images/fridge.svg">
-					<h3>Cave</h3>
-				</div>
-			</div>
-			<div id="buttons">
+			<h1>Ma liste</h1>
+			<ul id="list">
+				<li></li>
+				<li>Tomates <i class="fa fa-times" aria-hidden="true"></i></li>
+				<li>Jus de pomme <i class="fa fa-times" aria-hidden="true"></i></li>
+				<li>Crème fraîche <i class="fa fa-times" aria-hidden="true"></i></li>
+				<li>Gouda <i class="fa fa-times" aria-hidden="true"></i></li>
+				<li>Confiture <i class="fa fa-times" aria-hidden="true"></i></li>
+				<li>Lait <i class="fa fa-times" aria-hidden="true"></i></li>
+				<li>Jambon <i class="fa fa-times" aria-hidden="true"></i></li>
+				<li>Bacon <i class="fa fa-times" aria-hidden="true"></i></li>
+				<li>Margarine <i class="fa fa-times" aria-hidden="true"></i></li>
+				<li>Oeufs <i class="fa fa-times" aria-hidden="true"></i></li>
+			</ul>
+			<div id="add-item">
+				<div id="mask"></div>
 				<img src="./assets/images/dark-red/plus-button.svg">
-				<img src="./assets/images/dark-red/gear-button.svg">
 			</div>
 		</div>
 		<div id="right-part" class="side-part main-part">
-			<h2>Ma liste de<br>courses</h2>
+			<h2><br>Options</h2>
 			<div id="right-block" class="side-block">
 				<div class="separator"></div>
 				<div class="separator"></div>
-				<a href="liste.html">
-					<div id="view-list" class="right-button">
-						<i class="fa fa-search fa-4x" aria-hidden="true"></i>
-						<h3>Voir</h3>
-					</div>
-				</a>
+				<div id="view-list" class="right-button">
+					<i class="fa fa-trash fa-4x" aria-hidden="true"></i>
+					<h3>Vider</h3>
+				</div>
 				<div id="send-list" class="right-button">
 					<i class="fa fa-mobile fa-5x" aria-hidden="true"></i>
 					<h3>Envoyer</h3>
