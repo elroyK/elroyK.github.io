@@ -2,9 +2,9 @@ function sticky_relocate() {
     var window_top = $(window).scrollTop();
     var div_top = $('#sticky-anchor').offset().top;
     if (window_top > div_top)
-        $('.navbar').addClass('sticky');
+        $('#sticky-nav').addClass('sticky');
     else
-        $('.navbar').removeClass('sticky');
+        $('#sticky-nav').removeClass('sticky');
 }
 
 $(function() {
