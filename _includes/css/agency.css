@@ -907,3 +907,7 @@ header {
     padding-top: 60px;
     box-sizing: border-box;
 }
+
+.navbar-default .navbar-nav>.active>a {
+    background-color: #62AD00;
+}
