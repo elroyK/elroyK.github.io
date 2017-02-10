@@ -1,13 +1,7 @@
-function sticky_relocate() {
-    var window_top = $(window).scrollTop();
-    var header_bottom = $('#sticky-anchor').offset().bottom;
-    if (window_top > header_bottom)
-        $('#sticky-nav').addClass('sticky');
-    else
-        $('#sticky-nav').removeClass('sticky');
-}
+   var $window = $(window),
+       $stickyEl = $('#sticky-nav'),
+       elTop = $stickyEl.offset().top;
 
-$(function() {
-    $(window).scroll(sticky_relocate);
-    sticky_relocate();
-});
+   $window.scroll(function() {
+        $stickyEl.toggleClass('sticky', $window.scrollTop() > elTop);
+    });
