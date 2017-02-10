@@ -280,16 +280,11 @@ header {
     -o-background-size: cover;
 }
 
-header .container {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-}
-
 header .intro-text .intro-lead-in {
-    font-family: 'Bronson Gothic JS', 'Aller Display', "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 3em;
-    line-height: 1.2em;
+    margin-bottom: 25px;
+    font-family: 'Aller Display', "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    line-height: 22px;
 }
 
 img.growtext {
@@ -315,11 +310,9 @@ header .intro-text .intro-heading {
     }
 
     header .intro-text .intro-lead-in {
-        margin-bottom: 25px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 40px;
-        font-style: italic;
-        line-height: 40px;
+        font-family: 'Aller Display', "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 3em;
+        line-height: 1.2em;
     }
 
     header .intro-text .intro-heading {
@@ -329,6 +322,12 @@ header .intro-text .intro-heading {
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
+    }
+
+    header .container {
+        display: flex;
+        height: 100vh;
+        align-items: center;
     }
 }
 
