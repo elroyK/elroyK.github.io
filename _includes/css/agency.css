@@ -10,6 +10,11 @@ body {
     color: #{{ site.color.secondary-dark }};
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
 .text-muted {
     color: #777;
 }
@@ -305,10 +310,6 @@ header .intro-text .intro-heading {
 }
 
 @media(min-width:768px) {
-    header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
-    }
 
     header .intro-text .intro-lead-in {
         font-family: 'Aller Display', "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
