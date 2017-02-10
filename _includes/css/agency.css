@@ -277,6 +277,7 @@ header {
     color: #fff;
     background-attachment: scroll;
     background-color: #62AD00;
+    background-image: url(img/header-bg.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -877,4 +878,14 @@ body {
 .contact-text {
     color:white;
     font-size:18px;
+}
+
+
+
+
+
+
+
+nav {
+    position: initial;
 }
