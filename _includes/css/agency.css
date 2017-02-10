@@ -886,6 +886,10 @@ body {
 
 
 
-nav {
-    position: initial;
+.navbar-default .nav li a {
+    color: #060606;
+}
+
+.navbar-default .nav li a:hover {
+    color: #62AD00;
 }
