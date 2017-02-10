@@ -1,7 +1,7 @@
 function sticky_relocate() {
     var window_top = $(window).scrollTop();
-    var div_top = $('#sticky-anchor').offset().top;
-    if (window_top > div_top)
+    var header_bottom = $('#sticky-anchor').offset().bottom;
+    if (window_top > header_bottom)
         $('#sticky-nav').addClass('sticky');
     else
         $('#sticky-nav').removeClass('sticky');
