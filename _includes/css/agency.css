@@ -881,7 +881,6 @@ body {
 }
 
 header {
-    padding-top: 60px;
     box-sizing: border-box;
 }
 
@@ -941,6 +940,10 @@ img.computer-preview {
         font-size: 1.8em;
         font-weight: 700;
         line-height: 50px;
+    }
+
+    header .intro-text {
+        padding: 0;
     }
 
     header .container {
