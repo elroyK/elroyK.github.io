@@ -872,8 +872,13 @@ body {
     position: -o-sticky;
     position: sticky;
 }
+
 .navbar-default .nav li a {
     color: #060606;
+}
+
+.navbar-default .nav li {
+    background-color: #{{ site.color.primary }};
 }
 
 header {
@@ -942,6 +947,7 @@ img.computer-preview {
 
     header .intro-text {
         padding: 0;
+        width: 45%;
     }
 
     header .container {
