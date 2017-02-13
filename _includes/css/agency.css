@@ -877,7 +877,7 @@ body {
     color: #060606;
 }
 
-.navbar-default .nav li {
+.navbar-default .nav li.active {
     background-color: #{{ site.color.primary }};
 }
 
