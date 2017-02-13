@@ -897,6 +897,26 @@ img.krowd {
     height: 100%;
 }
 
+header {
+    background-color: #FBC31E;
+}
+
+header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: 'Aller Display', "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    line-height: 22px;
+    font-style: normal;
+}
+
+img.krowdtext {
+    height: 1.5em;
+}
+
+img.computer-preview {
+    height: 60vh;
+}
+
 @media(min-width: 768px) {
     .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
         margin-left: -15px;
@@ -928,24 +948,4 @@ img.krowd {
         height: 100vh;
         align-items: center;
     }
-}
-
-header {
-    background-color: #FBC31E;
-}
-
-header .intro-text .intro-lead-in {
-    margin-bottom: 25px;
-    font-family: 'Aller Display', "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 22px;
-    line-height: 22px;
-    font-style: normal;
-}
-
-img.krowdtext {
-    height: 1.5em;
-}
-
-img.computer-preview {
-    height: 60vh;
 }
