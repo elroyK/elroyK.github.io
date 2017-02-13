@@ -947,11 +947,3 @@ img.krowdtext {
 img.computer-preview {
     height: 60vh;
 }
-
-header .intro-text .intro-lead-in {
-    margin-bottom: 25px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 22px;
-    font-style: italic;
-    line-height: 22px;
-}
