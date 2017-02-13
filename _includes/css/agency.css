@@ -912,6 +912,7 @@ img.krowd {
         font-family: 'Aller Display', "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 3em;
         line-height: 1.2em;
+        font-style: normal;
     }
 
     header .intro-text .intro-heading {
@@ -938,6 +939,7 @@ header .intro-text .intro-lead-in {
     font-family: 'Aller Display', "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 22px;
     line-height: 22px;
+    font-style: normal;
 }
 
 img.krowdtext {
