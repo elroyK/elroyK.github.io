@@ -876,16 +876,8 @@ body {
     color: #060606;
 }
 
-.navbar-default .nav li a:hover {
-    color: #FBC31E;
-}
-
 header {
     box-sizing: border-box;
-    background-color: #FBC31E;
-}
-
-.navbar-default .navbar-nav>.active>a {
     background-color: #FBC31E;
 }
 
