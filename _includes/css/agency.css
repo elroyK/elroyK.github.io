@@ -882,6 +882,7 @@ body {
 
 header {
     box-sizing: border-box;
+    background-color: #FBC31E;
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -894,10 +895,6 @@ header {
 
 img.krowd {
     height: 100%;
-}
-
-header {
-    background-color: #FBC31E;
 }
 
 header .intro-text .intro-lead-in {
@@ -914,6 +911,10 @@ img.krowdtext {
 
 img.computer-preview {
     height: 60vh;
+}
+
+.section-heading {
+    font-family: 'Aller Display', "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 @media(min-width: 768px) {
