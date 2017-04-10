@@ -1,61 +1,31 @@
-url: http://w4p.be
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: W4P Crowdsourcing platform
-email: pieterjan@openknowledge.be
-description: "W4P is a crowdsourcingplatform that you can host yourself. Boost local / social / open innovation today!"
-
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary: fbc31e
-  secondary: fbc31e
-  secondary-dark: 3A362D
-
-# Team names, titles and social links
-people:
-- name: Open Knowledge Belgium vzw
-  pic: 1
-  position: Project lead
-  social:
-    - title: desktop
-      url: http://www.openknowledge.be/
-    - title: twitter
-      url: https://twitter.com/openknowledgebe
-    - title: envelope
-      url: mailto:pieterjan [at] openknowledge.be
-
-- name: iDrops vzw
-  pic: 2
-  position: Pilot lead
-  social:
-    - title: desktop
-      url: http://idrops.be/
-    - title: twitter
-      url: https://twitter.com/idropslabs
-    - title: envelope
-      url: mailto:bart.cornille [at] idrops.be
-
-- name: Underlined
-  pic: 3
-  position: Technical Lead
-  social:
-    - title: desktop
-      url: https://underlined.be/
-    - title: twitter
-      url: https://twitter.com/underlined_be
-    - title: envelope
-      url: mailto:michiel [at] underlined.be
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: github
-    url: https://github.com/openknowledgebe/W4P
-
-# Postal address (add as many lines as necessary)
-address:
-  - line: Sint-Salvatorstraat 18/101
-  - line: 9000, Ghent
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Smart Flanders
+email: pieter.colpaert@imec.be
+description: > # this means to ignore newlines until "baseurl:"
+   Helping the 308 local municipalities in Flanders through the 13 center cities
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: imec_int
+github_username: smartflanders
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
