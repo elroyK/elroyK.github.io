@@ -4,7 +4,7 @@ layout: default
 
 {% assign events = site.events | sort: 'date' %}
 
-    <div class="home">
+    <div class="home layout layout--wide">
         <h1 class="h1">Een ondersteuningsprogramma van de Vlaamse Overheid voor real-time Open Data bij lokale overheden</h1>
         <!--<p>
           <nav>
@@ -17,29 +17,7 @@ layout: default
           </nav>
         </p>-->
         
-        <div class="layout layout--wide">
-            <div class="slider js-slider">
-                <div class="slider__frame js-slider__frame">
-                    {% for post in site.posts %}
-                    <div class="grid grid--is-stacked js-equal-height-container slider__slides js-slider__slides">
-                        <div class="col--3-12 col--8-12--xs col--5-12--s col--4-12--m">
-                            <a href="{{ post.url | relative_url }}" class="news-teaser js-equal-height">
-                                <article>
-                                    <div class="news-teaser__image">
-                                        <img src="//d201gzvprbtpxy.cloudfront.net/sites/default/files/images/vla_nieuwsartikel_weekvandemobiliteit2016_0.gif" alt="Image for news message">
-                                    </div>
-                                    <div class="news-teaser__content">
-                                        <h2 class="news-teaser__label">{{ post.category }}</h2>
-                                        <h1 class="news-teaser__title">{{ post.title | escape }}</h1>
-                                    </div>
-                                </article>
-                            </a>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
+        <h3 class="h3">Aankomende events</h3>
         
         <section class="region" id="home__events">
             <!--<h1 class="page-heading">Nieuws en opinies</h1>-->
@@ -54,7 +32,8 @@ layout: default
                                 </time>
                                 <h3 class="agenda-item__title" itemprop="name">{{ event.title }}</h3>
 
-                                <div class="agenda-item__text" itemprop="description" data-clamp="2">{{ event.content }}
+                                <div class="agenda-item__text" itemprop="description" data-clamp="2">
+                                    {{ event.content }}
                                 </div>
 
                             </article>
@@ -63,28 +42,176 @@ layout: default
                 {% endfor %}
             </ul>
       </section>
+        
+        
+<div class="circular-menu-container">
+    <ul class="circular-menu">
+        <li class="" tabindex="1">
+            <div class="center-section section-1">
+                <div class="animated fadeInUp">
+                    <h2 class="h2">Fragmenteer uw dataset in documenten.</h2>
+                    <a href="/technical-open-data-best-practices/">Lees meer</a>
+                </div>
+            </div>
+            <span class="arrow"></span>
+            <div class="bg"></div>
+            <div class="label">
+                <p>1</p>
+            </div>
+        </li>
+        <li class="" tabindex="2">
+            <div class="center-section section-2">
+                <div class="animated fadeInUp">
+                    <h2 class="h2">Voeg HTTP caching headers to aan ieder document.</h2>
+                    <a href="/technical-open-data-best-practices/">Lees meer</a>
+                </div>
+            </div>
+            <span class="arrow"></span>
+            <div class="bg"></div>
+            <div class="label">
+                <p>2</p>
+            </div>
+        </li>
+        <li class="" tabindex="3">
+            <div class="center-section section-3">
+                <div class="animated fadeInUp">
+                    <h2 class="h2">Voeg hypermedia beschrijvingen toe.</h2>
+                    <a href="/technical-open-data-best-practices/">Lees meer</a>
+                </div>
+            </div>
+            <span class="arrow"></span>
+            <div class="bg"></div>
+            <div class="label">
+                <p>3</p>
+            </div>
+        </li>
+        <li class="" tabindex="4">
+            <div class="center-section section-4">
+                <div class="animated fadeInUp">
+                    <h2 class="h2">Een web-adres per document en per ding.</h2>
+                    <a href="/technical-open-data-best-practices/">Lees meer</a>
+                </div>
+            </div>
+            <span class="arrow"></span>
+            <div class="bg"></div>
+            <div class="label">
+                <p>4</p>
+            </div>
+        </li>
+        <li class="" tabindex="5">
+            <div class="center-section section-5">
+                <div class="animated fadeInUp">
+                    <h2 class="h2">Gebruik het W3C SSN domeinmodel.</h2>
+                    <a href="/technical-open-data-best-practices/">Lees meer</a>
+                </div>
+            </div>
+            <span class="arrow"></span>
+            <div class="bg"></div>
+            <div class="label">
+                <p>5</p>
+            </div>
+        </li>
+        <li class="" tabindex="6">
+            <div class="center-section section-6">
+                <div class="animated fadeInUp">
+                    <h2 class="h2">Een machine-leesbare open licentie toevoegen.</h2>
+                    <a href="/technical-open-data-best-practices/">Lees meer</a>
+                </div>
+            </div>
+            <span class="arrow"></span>
+            <div class="bg"></div>
+            <div class="label">
+                <p>6</p>
+            </div>
+        </li>
+        <li class="" tabindex="7">
+            <div class="center-section section-7">
+                <div class="animated fadeInUp">
+                    <h2 class="h2">Cross Origin Resource Sharing header aanzetten.</h2>
+                    <a href="/technical-open-data-best-practices/">Lees meer</a>
+                </div>
+            </div>
+            <span class="arrow"></span>
+            <div class="bg"></div>
+            <div class="label">
+                <p>7</p>
+            </div>
+        </li>
+        <li class="" tabindex="8">
+            <div class="center-section section-8">
+                <div class="animated fadeInUp">
+                    <h2 class="h2">Zorg dat samenvattingen van data worden gegenereerd.</h2>
+                    <a href="/technical-open-data-best-practices/">Lees meer</a>
+                </div>
+            </div>
+            <span class="arrow"></span>
+            <div class="bg"></div>
+            <div class="label">
+                <p>8</p>
+            </div>
+        </li>
+        <li class="" tabindex="9">
+            <div class="center-section section-9">
+                <div class="animated fadeInUp">
+                    <h2 class="h2">Hergebruik bestaande Linked Data vocabularia.</h2>
+                    <a href="/technical-open-data-best-practices/">Lees meer</a>
+                </div>
+            </div>
+            <span class="arrow"></span>
+            <div class="bg"></div>
+            <div class="label">
+                <p>9</p>
+            </div>
+        </li>
+        <li class="" tabindex="10">
+            <div class="center-section section-10">
+                <div class="animated fadeInUp">
+                    <h2 class="h2">Integreer met Open Data portalen.</h2>
+                    <a href="/technical-open-data-best-practices/">Lees meer</a>
+                </div>
+            </div>
+            <span class="arrow"></span>
+            <div class="bg"></div>
+            <div class="label">
+                <p>10</p>
+            </div>
+        </li>
+        <div class="center-section section-intro">
+            <div class="animated fadeInUp">
+                <h2 class="h1">10</h2>
+                <p class="h3">best practices voor real-time Open Data</p>
+            </div>
+        </div>
+    </ul>
+</div>
+        
+        
     <section class="region">
       <div class="layout layout--wide">
-
-        <!-- component -->
         
-        <ul class="grid grid--is-stacked js-equal-height-container u-spacer">
-            {% for post in site.posts limit:3 %}
-          <li class="col--3-12 col--1-1--xs col--1-1--s col--4-12--m">
-            <a href="{{ post.url | relative_url }}" class="news-teaser js-equal-height u-mobile-no-equal-height">
-              <article itemscope itemtype="http://schema.org/NewsArticle">
-                <div class="news-teaser__content">
-                  <time class="news-teaser__label" datetime="2016-10-24" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
-                  <h1 class="news-teaser__title" itemprop="description">{{ post.title | escape }}</h1>
-                  <div class="news-teaser__text excerpt"><p>{{ post.excerpt | strip_html }}</p></div>
+        <h3 class="h3">Nieuws en opinies</h3>
+        <div class="slider js-slider">
+            <div class="slider__frame js-slider__frame">
+                <div class="grid grid--is-stacked js-equal-height-container slider__slides js-slider__slides">
+                    {% for post in site.posts %}
+                        <div class="col--3-12 col--8-12--xs col--5-12--s col--4-12--m">
+                            <a href="{{ post.url | relative_url }}" class="news-teaser js-equal-height">
+                                <article>
+                                    <!--<div class="news-teaser__image">
+                                        <img src="//d201gzvprbtpxy.cloudfront.net/sites/default/files/images/vla_nieuwsartikel_weekvandemobiliteit2016_0.gif" alt="Image for news message">
+                                    </div>-->
+                                    <div class="news-teaser__content">
+                                        <h2 class="news-teaser__label">{{ post.category }}</h2>
+                                        <h1 class="news-teaser__title">{{ post.title | escape }}</h1>
+                                        <h2 class="news-teaser__label nobold">{{ post.date | date: "%d %b %y" }}</h2>
+                                    </div>
+                                </article>
+                            </a>
+                        </div>  
+                    {% endfor %}
                 </div>
-              </article>
-            </a>
-          </li>
-            {% endfor %}
-        </ul>
-
-        <!-- end component -->
+            </div>
+        </div>
 
       </div>
     </section>

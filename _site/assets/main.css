@@ -184,6 +184,9 @@ iframe {
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical; }
 
+.nobold {
+  font-weight: 200 !important; }
+
 /**
  * Site header
  */
@@ -492,6 +495,395 @@ iframe {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+* {
+  Box-sizing: Border-box; }
+
+/* 
+    Created on : 22-Jun-2015, 13:00:20
+    Author     : probinson
+    Based on    : http://codepen.io/schoenwaldnils/pen/JnIKA
+*/
+/*
+    following functions from
+    https://unindented.org/articles/trigonometry-in-sass/
+*/
+.circular-menu-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: none;
+  width: auto; }
+
+.circular-menu {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  left: 50%;
+  margin: 0;
+  margin-left: -300px;
+  overflow: hidden;
+  border-radius: 500px;
+  border-radius: 50%;
+  z-index: 1;
+  list-style: none; }
+
+.center-section {
+  width: 360px;
+  height: 360px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -180px;
+  margin-left: -180px;
+  padding: 55px;
+  border-radius: 500px;
+  border-radius: 50%;
+  text-align: center;
+  background: #fff;
+  display: none;
+  z-index: 1; }
+
+.center-section.section-intro {
+  display: block; }
+
+.circular-menu li:hover ~ .center-section.section-intro,
+.touch .circular-menu li:focus ~ .center-section.section-intro {
+  display: none; }
+
+.touch .circular-menu li:focus {
+  outline: 0; }
+
+.circular-menu li div.label {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  z-index: 2; }
+
+.circular-menu li div.label p {
+  text-align: center;
+  max-width: 118.8px;
+  margin: 0 auto;
+  margin-top: 72px;
+  color: #fff; }
+
+.circular-menu li span.arrow {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: block;
+  transition: all 300ms ease-out;
+  z-index: 2; }
+
+.circular-menu li .bg {
+  width: 350px;
+  height: 300px;
+  position: absolute;
+  transform-origin: 0 300px;
+  margin-top: -300px;
+  left: 50%;
+  top: 50%;
+  transition: all 300ms ease-out; }
+
+.circular-menu li {
+  position: absolute;
+  text-decoration: none;
+  top: 50%;
+  left: 50%;
+  display: none; }
+
+.circular-menu li:nth-child(1) {
+  display: block; }
+
+.circular-menu li:nth-child(1) .bg {
+  transform: rotate(-72deg) skew(-54deg);
+  background: #0066CC; }
+
+.circular-menu li:nth-child(1):hover .bg,
+.touch .circular-menu li:nth-child(1):focus .bg {
+  background: #0080ff; }
+
+.circular-menu li:nth-child(1) span.arrow {
+  transform: rotate(-45deg);
+  margin: -225px 0 0 -15px;
+  background: #0066CC; }
+
+.circular-menu li:nth-child(1):hover span.arrow,
+.touch .circular-menu li:nth-child(1):focus span.arrow {
+  background: #0080ff;
+  margin: -195px 0 0 -15px; }
+
+.circular-menu li:nth-child(1) div.label {
+  margin: -330px 0 0 -90px; }
+
+.circular-menu li:nth-child(1):hover div.center-section.section-1,
+.touch .circular-menu li:nth-child(1):focus div.center-section.section-1 {
+  display: block; }
+
+.circular-menu li:nth-child(2) {
+  display: block; }
+
+.circular-menu li:nth-child(2) .bg {
+  transform: rotate(-36deg) skew(-54deg);
+  background: #3183D4; }
+
+.circular-menu li:nth-child(2):hover .bg,
+.touch .circular-menu li:nth-child(2):focus .bg {
+  background: #5b9cdd; }
+
+.circular-menu li:nth-child(2) span.arrow {
+  transform: rotate(-9deg);
+  margin: -184.89357px 0 0 108.4349px;
+  background: #3183D4; }
+
+.circular-menu li:nth-child(2):hover span.arrow,
+.touch .circular-menu li:nth-child(2):focus span.arrow {
+  background: #5b9cdd;
+  margin: -160.62306px 0 0 90.80135px; }
+
+.circular-menu li:nth-child(2) div.label {
+  margin: -284.16408px 0 0 51.06846px; }
+
+.circular-menu li:nth-child(2):hover div.center-section.section-2,
+.touch .circular-menu li:nth-child(2):focus div.center-section.section-2 {
+  display: block; }
+
+.circular-menu li:nth-child(3) {
+  display: block; }
+
+.circular-menu li:nth-child(3) .bg {
+  transform: rotate(0deg) skew(-54deg);
+  background: #004C99; }
+
+.circular-menu li:nth-child(3):hover .bg,
+.touch .circular-menu li:nth-child(3):focus .bg {
+  background: #0065cc; }
+
+.circular-menu li:nth-child(3) span.arrow {
+  transform: rotate(27deg);
+  margin: -79.89357px 0 0 184.72187px;
+  background: #004C99; }
+
+.circular-menu li:nth-child(3):hover span.arrow,
+.touch .circular-menu li:nth-child(3):focus span.arrow {
+  background: #0065cc;
+  margin: -70.62306px 0 0 156.19017px; }
+
+.circular-menu li:nth-child(3) div.label {
+  margin: -164.16408px 0 0 138.25356px; }
+
+.circular-menu li:nth-child(3):hover div.center-section.section-3,
+.touch .circular-menu li:nth-child(3):focus div.center-section.section-3 {
+  display: block; }
+
+.circular-menu li:nth-child(4) {
+  display: block; }
+
+.circular-menu li:nth-child(4) .bg {
+  transform: rotate(36deg) skew(-54deg);
+  background: #0066CC; }
+
+.circular-menu li:nth-child(4):hover .bg,
+.touch .circular-menu li:nth-child(4):focus .bg {
+  background: #0080ff; }
+
+.circular-menu li:nth-child(4) span.arrow {
+  transform: rotate(63deg);
+  margin: 49.89357px 0 0 184.72187px;
+  background: #0066CC; }
+
+.circular-menu li:nth-child(4):hover span.arrow,
+.touch .circular-menu li:nth-child(4):focus span.arrow {
+  background: #0080ff;
+  margin: 40.62306px 0 0 156.19017px; }
+
+.circular-menu li:nth-child(4) div.label {
+  margin: -15.83592px 0 0 138.25356px; }
+
+.circular-menu li:nth-child(4):hover div.center-section.section-4,
+.touch .circular-menu li:nth-child(4):focus div.center-section.section-4 {
+  display: block; }
+
+.circular-menu li:nth-child(5) {
+  display: block; }
+
+.circular-menu li:nth-child(5) .bg {
+  transform: rotate(72deg) skew(-54deg);
+  background: #3183D4; }
+
+.circular-menu li:nth-child(5):hover .bg,
+.touch .circular-menu li:nth-child(5):focus .bg {
+  background: #5b9cdd; }
+
+.circular-menu li:nth-child(5) span.arrow {
+  transform: rotate(99deg);
+  margin: 154.89357px 0 0 108.4349px;
+  background: #3183D4; }
+
+.circular-menu li:nth-child(5):hover span.arrow,
+.touch .circular-menu li:nth-child(5):focus span.arrow {
+  background: #5b9cdd;
+  margin: 130.62306px 0 0 90.80135px; }
+
+.circular-menu li:nth-child(5) div.label {
+  margin: 104.16408px 0 0 51.06846px; }
+
+.circular-menu li:nth-child(5):hover div.center-section.section-5,
+.touch .circular-menu li:nth-child(5):focus div.center-section.section-5 {
+  display: block; }
+
+.circular-menu li:nth-child(6) {
+  display: block; }
+
+.circular-menu li:nth-child(6) .bg {
+  transform: rotate(108deg) skew(-54deg);
+  background: #004C99; }
+
+.circular-menu li:nth-child(6):hover .bg,
+.touch .circular-menu li:nth-child(6):focus .bg {
+  background: #0065cc; }
+
+.circular-menu li:nth-child(6) span.arrow {
+  transform: rotate(135deg);
+  margin: 195px 0 0 -15px;
+  background: #004C99; }
+
+.circular-menu li:nth-child(6):hover span.arrow,
+.touch .circular-menu li:nth-child(6):focus span.arrow {
+  background: #0065cc;
+  margin: 165px 0 0 -15px; }
+
+.circular-menu li:nth-child(6) div.label {
+  margin: 150px 0 0 -90px; }
+
+.circular-menu li:nth-child(6):hover div.center-section.section-6,
+.touch .circular-menu li:nth-child(6):focus div.center-section.section-6 {
+  display: block; }
+
+.circular-menu li:nth-child(7) {
+  display: block; }
+
+.circular-menu li:nth-child(7) .bg {
+  transform: rotate(144deg) skew(-54deg);
+  background: #0066CC; }
+
+.circular-menu li:nth-child(7):hover .bg,
+.touch .circular-menu li:nth-child(7):focus .bg {
+  background: #0080ff; }
+
+.circular-menu li:nth-child(7) span.arrow {
+  transform: rotate(171deg);
+  margin: 154.89357px 0 0 -138.4349px;
+  background: #0066CC; }
+
+.circular-menu li:nth-child(7):hover span.arrow,
+.touch .circular-menu li:nth-child(7):focus span.arrow {
+  background: #0080ff;
+  margin: 130.62306px 0 0 -120.80135px; }
+
+.circular-menu li:nth-child(7) div.label {
+  margin: 104.16408px 0 0 -231.06846px; }
+
+.circular-menu li:nth-child(7):hover div.center-section.section-7,
+.touch .circular-menu li:nth-child(7):focus div.center-section.section-7 {
+  display: block; }
+
+.circular-menu li:nth-child(8) {
+  display: block; }
+
+.circular-menu li:nth-child(8) .bg {
+  transform: rotate(180deg) skew(-54deg);
+  background: #3183D4; }
+
+.circular-menu li:nth-child(8):hover .bg,
+.touch .circular-menu li:nth-child(8):focus .bg {
+  background: #5b9cdd; }
+
+.circular-menu li:nth-child(8) span.arrow {
+  transform: rotate(207deg);
+  margin: 49.89357px 0 0 -214.72187px;
+  background: #3183D4; }
+
+.circular-menu li:nth-child(8):hover span.arrow,
+.touch .circular-menu li:nth-child(8):focus span.arrow {
+  background: #5b9cdd;
+  margin: 40.62306px 0 0 -186.19017px; }
+
+.circular-menu li:nth-child(8) div.label {
+  margin: -15.83592px 0 0 -318.25356px; }
+
+.circular-menu li:nth-child(8):hover div.center-section.section-8,
+.touch .circular-menu li:nth-child(8):focus div.center-section.section-8 {
+  display: block; }
+
+.circular-menu li:nth-child(9) {
+  display: block; }
+
+.circular-menu li:nth-child(9) .bg {
+  transform: rotate(216deg) skew(-54deg);
+  background: #004C99; }
+
+.circular-menu li:nth-child(9):hover .bg,
+.touch .circular-menu li:nth-child(9):focus .bg {
+  background: #0065cc; }
+
+.circular-menu li:nth-child(9) span.arrow {
+  transform: rotate(243deg);
+  margin: -79.89357px 0 0 -214.72187px;
+  background: #004C99; }
+
+.circular-menu li:nth-child(9):hover span.arrow,
+.touch .circular-menu li:nth-child(9):focus span.arrow {
+  background: #0065cc;
+  margin: -70.62306px 0 0 -186.19017px; }
+
+.circular-menu li:nth-child(9) div.label {
+  margin: -164.16408px 0 0 -318.25356px; }
+
+.circular-menu li:nth-child(9):hover div.center-section.section-9,
+.touch .circular-menu li:nth-child(9):focus div.center-section.section-9 {
+  display: block; }
+
+.circular-menu li:nth-child(10) {
+  display: block; }
+
+.circular-menu li:nth-child(10) .bg {
+  transform: rotate(252deg) skew(-54deg);
+  background: #348BE1; }
+
+.circular-menu li:nth-child(10):hover .bg,
+.touch .circular-menu li:nth-child(10):focus .bg {
+  background: #60a4e8; }
+
+.circular-menu li:nth-child(10) span.arrow {
+  transform: rotate(279deg);
+  margin: -184.89357px 0 0 -138.4349px;
+  background: #348BE1; }
+
+.circular-menu li:nth-child(10):hover span.arrow,
+.touch .circular-menu li:nth-child(10):focus span.arrow {
+  background: #60a4e8;
+  margin: -160.62306px 0 0 -120.80134px; }
+
+.circular-menu li:nth-child(10) div.label {
+  margin: -284.16408px 0 0 -231.06845px; }
+
+.circular-menu li:nth-child(10):hover div.center-section.section-10,
+.touch .circular-menu li:nth-child(10):focus div.center-section.section-10 {
+  display: block; }
+
+.animated {
+  animation-duration: 0.75s;
+  animation-fill-mode: both; }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+.fadeInUp {
+  animation-name: fadeInUp; }
 
 .tote {
   text-align: center; }
