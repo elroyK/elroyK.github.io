@@ -1,34 +1,92 @@
 ---
 layout: default
 ---
-<div class="home">
-  <hr/>
-  <section class="hero">
-    <h1 class="title h1">Een ondersteuningsprogramma van de Vlaamse Overheid voor real-time Open Data bij lokale overheden</h1>
-    <p>
-      <nav>
-        <ul>
-          <!--<li><a href="#todo">Onze maturity check</a></li>
-          <li><a href="#todo">Het Smart Flanders Open Data Charter</a></li>
-          <li><a href="#todo">Onze Open and Agile Smart Cities werking</a></li>-->
-          <!--<li><a href="/technical-open-data-best-practices/">The 10 technische best practices voor real-time Open Data</a></li>-->
+
+{% assign events = site.events | sort: 'date' %}
+
+    <div class="home">
+        <h1 class="h1">Een ondersteuningsprogramma van de Vlaamse Overheid voor real-time Open Data bij lokale overheden</h1>
+        <!--<p>
+          <nav>
+            <ul>
+              <!--<li><a href="#todo">Onze maturity check</a></li>
+              <li><a href="#todo">Het Smart Flanders Open Data Charter</a></li>
+              <li><a href="#todo">Onze Open and Agile Smart Cities werking</a></li>-->
+              <!--<li><a href="/technical-open-data-best-practices/">The 10 technische best practices voor real-time Open Data</a></li>
+            </ul>
+          </nav>
+        </p>-->
+        
+        <div class="layout layout--wide">
+            <div class="slider js-slider">
+                <div class="slider__frame js-slider__frame">
+                    {% for post in site.posts %}
+                    <div class="grid grid--is-stacked js-equal-height-container slider__slides js-slider__slides">
+                        <div class="col--3-12 col--8-12--xs col--5-12--s col--4-12--m">
+                            <a href="{{ post.url | relative_url }}" class="news-teaser js-equal-height">
+                                <article>
+                                    <div class="news-teaser__image">
+                                        <img src="//d201gzvprbtpxy.cloudfront.net/sites/default/files/images/vla_nieuwsartikel_weekvandemobiliteit2016_0.gif" alt="Image for news message">
+                                    </div>
+                                    <div class="news-teaser__content">
+                                        <h2 class="news-teaser__label">{{ post.category }}</h2>
+                                        <h1 class="news-teaser__title">{{ post.title | escape }}</h1>
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        
+        <section class="region" id="home__events">
+            <!--<h1 class="page-heading">Nieuws en opinies</h1>-->
+            <ul class="grid grid--is-stacked u-spacer">
+                {% for event in events limit:3 %}
+                    <li class="col--4-12 col--6-12--m col--12-12--xs">
+                        <a href="#" class="agenda-item">
+                            <article itemscope itemtype="http://schema.org/Event">
+                                <time class="agenda-item__date" datetime="2015-06-01" itemprop="startDate">
+                                    <div class="agenda-item__date__day">{{ event.date | date: "%d" }}</div>
+                                    <div class="agenda-item__date__month">{{ event.date | date: "%b" }}</div>
+                                </time>
+                                <h3 class="agenda-item__title" itemprop="name">{{ event.title }}</h3>
+
+                                <div class="agenda-item__text" itemprop="description" data-clamp="2">{{ event.content }}
+                                </div>
+
+                            </article>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+      </section>
+    <section class="region">
+      <div class="layout layout--wide">
+
+        <!-- component -->
+        
+        <ul class="grid grid--is-stacked js-equal-height-container u-spacer">
+            {% for post in site.posts limit:3 %}
+          <li class="col--3-12 col--1-1--xs col--1-1--s col--4-12--m">
+            <a href="{{ post.url | relative_url }}" class="news-teaser js-equal-height u-mobile-no-equal-height">
+              <article itemscope itemtype="http://schema.org/NewsArticle">
+                <div class="news-teaser__content">
+                  <time class="news-teaser__label" datetime="2016-10-24" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
+                  <h1 class="news-teaser__title" itemprop="description">{{ post.title | escape }}</h1>
+                  <div class="news-teaser__text excerpt"><p>{{ post.excerpt | strip_html }}</p></div>
+                </div>
+              </article>
+            </a>
+          </li>
+            {% endfor %}
         </ul>
-      </nav>
-    </p>
-  </section>
-  <hr/>
-  <section>
-    <!--<h1 class="page-heading">Nieuws en opinies</h1>-->
-    <ul class="post-list">
-      {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2 class="h2">
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-        <p>{{ post.excerpt }}</p>
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
+
+        <!-- end component -->
+
+      </div>
+    </section>
+      
 </div>
