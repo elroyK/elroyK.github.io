@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-
-{% assign events = site.events | sort: 'date' %}
+{% assign events = site.events | sort: 'date' | reverse %}
+{% capture nowunix %}{{'now' | date: '%y%m%d'}}{% endcapture %}
 
     <div class="home layout layout--wide">
         <h1 class="h1">Een ondersteuningsprogramma van de Vlaamse Overheid voor real-time Open Data bij lokale overheden</h1>
@@ -22,7 +22,12 @@ layout: default
         <section class="region" id="home__events">
             <!--<h1 class="page-heading">Nieuws en opinies</h1>-->
             <ul class="grid grid--is-stacked u-spacer">
-                {% for event in events limit:3 %}
+                {% for event in events reversed limit:3 %}
+                {% capture eventdate %}{{event.date | date: '%y%m%d'}}{% endcapture %}
+                    {% if eventdate < nowunix %}
+                        {% continue %}
+                    {% else %}
+                    {% endif %}
                     <li class="col--4-12 col--6-12--m col--12-12--xs">
                         <a href="#" class="agenda-item">
                             <article itemscope itemtype="http://schema.org/Event">
@@ -43,147 +48,16 @@ layout: default
             </ul>
       </section>
         
-        
-<div class="circular-menu-container">
-    <ul class="circular-menu">
-        <li class="" tabindex="1">
-            <div class="center-section section-1">
-                <div class="animated fadeInUp">
-                    <h2 class="h2">Fragmenteer uw dataset in documenten.</h2>
-                    <a href="/technical-open-data-best-practices/">Lees meer</a>
-                </div>
-            </div>
-            <span class="arrow"></span>
-            <div class="bg"></div>
-            <div class="label">
-                <p>1</p>
-            </div>
-        </li>
-        <li class="" tabindex="2">
-            <div class="center-section section-2">
-                <div class="animated fadeInUp">
-                    <h2 class="h2">Voeg HTTP caching headers to aan ieder document.</h2>
-                    <a href="/technical-open-data-best-practices/">Lees meer</a>
-                </div>
-            </div>
-            <span class="arrow"></span>
-            <div class="bg"></div>
-            <div class="label">
-                <p>2</p>
-            </div>
-        </li>
-        <li class="" tabindex="3">
-            <div class="center-section section-3">
-                <div class="animated fadeInUp">
-                    <h2 class="h2">Voeg hypermedia beschrijvingen toe.</h2>
-                    <a href="/technical-open-data-best-practices/">Lees meer</a>
-                </div>
-            </div>
-            <span class="arrow"></span>
-            <div class="bg"></div>
-            <div class="label">
-                <p>3</p>
-            </div>
-        </li>
-        <li class="" tabindex="4">
-            <div class="center-section section-4">
-                <div class="animated fadeInUp">
-                    <h2 class="h2">Een web-adres per document en per ding.</h2>
-                    <a href="/technical-open-data-best-practices/">Lees meer</a>
-                </div>
-            </div>
-            <span class="arrow"></span>
-            <div class="bg"></div>
-            <div class="label">
-                <p>4</p>
-            </div>
-        </li>
-        <li class="" tabindex="5">
-            <div class="center-section section-5">
-                <div class="animated fadeInUp">
-                    <h2 class="h2">Gebruik het W3C SSN domeinmodel.</h2>
-                    <a href="/technical-open-data-best-practices/">Lees meer</a>
-                </div>
-            </div>
-            <span class="arrow"></span>
-            <div class="bg"></div>
-            <div class="label">
-                <p>5</p>
-            </div>
-        </li>
-        <li class="" tabindex="6">
-            <div class="center-section section-6">
-                <div class="animated fadeInUp">
-                    <h2 class="h2">Een machine-leesbare open licentie toevoegen.</h2>
-                    <a href="/technical-open-data-best-practices/">Lees meer</a>
-                </div>
-            </div>
-            <span class="arrow"></span>
-            <div class="bg"></div>
-            <div class="label">
-                <p>6</p>
-            </div>
-        </li>
-        <li class="" tabindex="7">
-            <div class="center-section section-7">
-                <div class="animated fadeInUp">
-                    <h2 class="h2">Cross Origin Resource Sharing header aanzetten.</h2>
-                    <a href="/technical-open-data-best-practices/">Lees meer</a>
-                </div>
-            </div>
-            <span class="arrow"></span>
-            <div class="bg"></div>
-            <div class="label">
-                <p>7</p>
-            </div>
-        </li>
-        <li class="" tabindex="8">
-            <div class="center-section section-8">
-                <div class="animated fadeInUp">
-                    <h2 class="h2">Zorg dat samenvattingen van data worden gegenereerd.</h2>
-                    <a href="/technical-open-data-best-practices/">Lees meer</a>
-                </div>
-            </div>
-            <span class="arrow"></span>
-            <div class="bg"></div>
-            <div class="label">
-                <p>8</p>
-            </div>
-        </li>
-        <li class="" tabindex="9">
-            <div class="center-section section-9">
-                <div class="animated fadeInUp">
-                    <h2 class="h2">Hergebruik bestaande Linked Data vocabularia.</h2>
-                    <a href="/technical-open-data-best-practices/">Lees meer</a>
-                </div>
-            </div>
-            <span class="arrow"></span>
-            <div class="bg"></div>
-            <div class="label">
-                <p>9</p>
-            </div>
-        </li>
-        <li class="" tabindex="10">
-            <div class="center-section section-10">
-                <div class="animated fadeInUp">
-                    <h2 class="h2">Integreer met Open Data portalen.</h2>
-                    <a href="/technical-open-data-best-practices/">Lees meer</a>
-                </div>
-            </div>
-            <span class="arrow"></span>
-            <div class="bg"></div>
-            <div class="label">
-                <p>10</p>
-            </div>
-        </li>
-        <div class="center-section section-intro">
-            <div class="animated fadeInUp">
-                <h2 class="h1">10</h2>
-                <p class="h3">best practices voor real-time Open Data</p>
-            </div>
+    <section class="region">
+        <div class="layout layout--wide">
+            <h3 class="h3">Huidige status</h3>
+            <ul class="bullet-list bullet-list--check">
+            <li class="bullet-list__item">Lorem ipsum</li>
+            <li class="bullet-list__item">Doler sit</li>
+            <li class="bullet-list__item">If you want you can have a <a href="#">link</a></li>
+            </ul>
         </div>
-    </ul>
-</div>
+    </section>
         
         
     <section class="region">

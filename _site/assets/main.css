@@ -187,6 +187,9 @@ iframe {
 .nobold {
   font-weight: 200 !important; }
 
+.person {
+  padding-bottom: 2em; }
+
 /**
  * Site header
  */
