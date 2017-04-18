@@ -1,5 +1,5 @@
 ---
-title: Publicatie titel
+title: Publicatie
 layout: post
 category: Category
 ---
