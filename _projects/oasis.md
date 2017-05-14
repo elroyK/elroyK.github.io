@@ -7,4 +7,6 @@ color: 289adb
 category:
   - code
   - desktop
+  - building
+hours: 20
 ---

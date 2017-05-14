@@ -8,6 +8,8 @@ color: 06c
 category:
   - code
   - desktop
+  - building
+hours: 40
 ---
 
 [Intro: Popcaan]

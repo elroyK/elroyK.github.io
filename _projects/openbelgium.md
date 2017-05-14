@@ -9,4 +9,7 @@ category:
   - desktop
   - paintbrush
   - calendar
+  - building
+  - users
+hours: 30
 ---
