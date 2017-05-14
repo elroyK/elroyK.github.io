@@ -2,6 +2,8 @@
 layout: default
 ---
 {% assign totalHours = 0 %}
+<a onclick="HideDescriptions(About);"><div class="overlay-invisible" id="overlay-invisibleAbout"></div></a>
+<a onclick="HideDescriptions(CV);"><div class="overlay-invisible" id="overlay-invisibleCV"></div></a>
 {% for project in site.projects %}
     {% totalHours += project.hours %}
     <a onclick="HideDescriptions({{ forloop.index }});"><div class="overlay-invisible" id="overlay-invisible{{ forloop.index }}"></div></a>
