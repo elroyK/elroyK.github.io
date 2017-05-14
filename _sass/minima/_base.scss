@@ -1,7 +1,3 @@
-* {
-    transition: all, .3s, linear;
-}
-
 /**
  * Reset some basic elements
  */
@@ -106,8 +102,15 @@ a {
     color: $text-color;
     text-decoration: underline;
   }
-}
 
+  .social-media-list &:hover {
+    text-decoration: none;
+
+    .username {
+      text-decoration: underline;
+    }
+  }
+}
 
 
 /**
@@ -117,7 +120,7 @@ blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
   padding-left: $spacing-unit / 2;
-  font-size: 18px;
+  @include relative-font-size(1.125);
   letter-spacing: -1px;
   font-style: italic;
 
@@ -133,7 +136,7 @@ blockquote {
  */
 pre,
 code {
-  font-size: 15px;
+  @include relative-font-size(0.9375);
   border: 1px solid $grey-color-light;
   border-radius: 3px;
   background-color: #eef;
@@ -201,60 +204,12 @@ pre {
   }
 }
 
-/**
- * Personalisation
- */
-a.link-no-style, .link-no-style > a {
-    color: #333;
-    text-decoration: none;
-}
+.social-media-list {
+  .icon {
+    padding-right: 5px;
+  }
 
-p.center-p {
-   text-align: center;
-}
-
-.footer-logos {
-    padding-bottom: 10px;
-}
-
-.link-no-style > a:hover > span > svg > path{
-    fill: #3184d6;
-}
-
-.tabs--alt:before {
-    width: 100vw !important;
-}
-
-iframe {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    display: block;
-}
-
-.layout--wide {
-    padding: 0 !important;
-}
-
-.agenda-item__date__month {
-    text-transform: lowercase;
-}
-
-.excerpt {
-    height: 10rem;
-    
-    & > p {
-        text-overflow: ellipsis;
-        height: 100%;
-        overflow: hidden;
-        -webkit-line-clamp: 5;
-        -webkit-box-orient: vertical;
-    }
-}
-
-.nobold {
-    font-weight: 200 !important;
-}
-
-.person {
-    padding-bottom: 2em;
+  li + li {
+    padding-top: 5px;
+  }
 }

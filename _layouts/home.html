@@ -2,20 +2,31 @@
 layout: default
 ---
 
-<div class="home">
+{% for project in site.projects %}
+    <a onclick="HideDescriptions({{ forloop.index }});"><div class="overlay-invisible" id="overlay-invisible{{ forloop.index }}"></div></a>
+    <a class="project-link" onclick="ToggleDescription({{ forloop.index }});">
+        <div class="project" id="project{{ forloop.index }}" style="background-image: url('/assets/img/projects/{{ project.picture }}')">
+            <div class="overlay {% if project.overlaycolor %} {{ project.overlaycolor }} {% endif %}" style="background-color: #{{ project.color }}">
+                <p>
+                    Cliquez pour<br>
+                    en savoir plus
+                </p>
+            </div>
+            <div class="overlay-empty" style="background-color: #{{ project.color }}"></div>
+            <div class="project-meta {{ project.textcolor }}" style="background-color: #{{ project.color }}">
+                <h3>{{ project.name }}</h3>
+                {% if project.category %}
+                    <div class="icons">
+                        {% for icon in project.category %}
+                            <i class="fa fa-{{icon}}" aria-hidden="true"></i>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </a>
+    <div class="project-description {{ project.textcolor }}" id="descr{{ forloop.index }}" style="background-color: #{{ project.color }}">
+        {{ project.content }}
+    </div>
 
-  <h1 class="page-heading">Posts</h1>
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
-</div>
+{% endfor %}
