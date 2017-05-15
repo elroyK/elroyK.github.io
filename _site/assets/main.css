@@ -638,10 +638,18 @@ body {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
   .project-description::-webkit-scrollbar-thumb {
     background-color: rgba(13, 13, 13, 0.5); }
-  .project-description.black, .project-description.black:hover, .project-description.black:active, .project-description.black:visited {
-    color: #0d0d0d; }
-  .project-description.white, .project-description.white:hover, .project-description.white:active, .project-description.white:visited {
+  .project-description a {
+    border-bottom: 2px solid; }
+  .project-description.black, .project-description.black:hover, .project-description.black:active, .project-description.black:visited, .project-description.black a {
+    color: #0d0d0d;
+    border-color: #f6f6f6; }
+  .project-description.black a:hover {
     color: #f6f6f6; }
+  .project-description.white, .project-description.white:hover, .project-description.white:active, .project-description.white:visited, .project-description.white a {
+    color: #f6f6f6;
+    border-color: #0d0d0d; }
+  .project-description.white a:hover {
+    color: #0d0d0d; }
 
 .overlay-invisible {
   background: transparent;

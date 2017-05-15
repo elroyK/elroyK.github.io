@@ -11,5 +11,5 @@ category:
   - desktop
   - calendar
   - users
-hours: 200
+hours: 230
 ---

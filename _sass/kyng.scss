@@ -233,15 +233,29 @@ body {
         background-color: $black-transp;
     }
     
+    a {
+        border-bottom: 2px solid;
+    }
+    
     &.black {
-            &, &:hover, &:active, &:visited {
-                color: $black;
-            }
+        &, &:hover, &:active, &:visited, a {
+            color: $black;
+            border-color: $white;
+        }  
+        
+        a:hover {
+            color: $white;
         }
+    }
         
     &.white {
-        &, &:hover, &:active, &:visited {
+        &, &:hover, &:active, &:visited, a {
             color: $white;
+            border-color: $black;
+        }
+        
+        a:hover {
+            color: $black;
         }
     }
 }

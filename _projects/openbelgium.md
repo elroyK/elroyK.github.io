@@ -11,5 +11,5 @@ category:
   - calendar
   - building
   - users
-hours: 30
+hours: 31
 ---
