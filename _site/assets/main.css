@@ -531,6 +531,11 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   font-size: 1.8em; }
+  #askew-author a {
+    margin-left: 2em;
+    color: #ff9d00 !important; }
+    #askew-author a:hover {
+      color: #f6f6f6 !important; }
 
 .project {
   height: 250px;
@@ -573,7 +578,7 @@ body {
   .project .overlay {
     opacity: 0;
     background-color: #0d0d0d;
-    font-family: "filson-soft";
+    font-family: "filson-soft" !important;
     height: 100%;
     width: 100%;
     color: #f6f6f6;
@@ -624,7 +629,8 @@ body {
   box-shadow: -1px 0px rgba(6, 6, 6, 0.1);
   border-left: 2px solid #f6f6f6;
   padding: 120px 25px 15px 25px;
-  overflow-y: auto; }
+  overflow-y: auto;
+  font-family: "jaf-domus"; }
   .project-description::-webkit-scrollbar {
     width: 12px;
     margin-left: 2px; }
@@ -646,3 +652,23 @@ body {
   position: fixed;
   top: 0;
   left: 0; }
+
+#about, #cv {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "jaf-domus";
+  color: #f6f6f6; }
+  #about a, #cv a {
+    color: #ffce80; }
+    #about a:hover, #cv a:hover {
+      border-bottom: 2px solid #ff9d00;
+      color: #ff9d00; }
+  #about ul, #cv ul {
+    list-style: none; }
+  #about .fa, #cv .fa {
+    color: #ff9d00; }
+  #about h1, #about strong, #cv h1, #cv strong {
+    color: #ff9d00; }
+  #about h3, #about em, #about i:not(.fa), #cv h3, #cv em, #cv i:not(.fa) {
+    color: #ffce80; }

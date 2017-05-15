@@ -75,6 +75,15 @@ body {
     font-weight: 500;
     text-transform: uppercase;
     font-size: 1.8em;
+    
+    a {
+        margin-left: 2em;
+        color: $orange !important;
+        
+        &:hover {
+            color: $white !important;
+        }
+    }
 }
 
 .project {
@@ -133,7 +142,7 @@ body {
     .overlay {
         opacity: 0;
         background-color: $black;
-        font-family: "filson-soft";
+        font-family: "filson-soft" !important;
         height: 100%;
         width: 100%;
         color: $white;
@@ -209,6 +218,7 @@ body {
     border-left: 2px solid $white;
     padding: 120px 25px 15px 25px;
     overflow-y: auto;
+    font-family: "jaf-domus";
     
     &::-webkit-scrollbar {
         width: 12px;
@@ -245,4 +255,37 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+}
+
+#about, #cv {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "jaf-domus";
+    color: $white;
+    
+    a {
+        color: lighten($orange, 25%);
+        
+        &:hover {
+            border-bottom: 2px solid $orange;
+            color: $orange;
+        }
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    .fa {
+        color: $orange;
+    }
+    
+    h1, strong {
+        color: $orange;
+    }
+    
+    h3, em, i:not(.fa) {
+        color: lighten($orange, 25%);
+    }
 }

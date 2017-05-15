@@ -1,14 +1,28 @@
+{% assign default_paths = site.pages | map: "path" %}
+{% assign page_paths = site.header_pages | default: default_paths %}
+{% assign current = page.url | downcase | split: '/' %}
 <div id="askew">
+    
     <img src="/assets/img/logo@vector.svg" id="logo">
-    <h1 id="askew-title">{{ site.title | escape }}</h1>
-    <h2 id="askew-author">{{ site.author | escape }}</h2>
-    <h3 id="askew-links"><a onclick="ToggleDescription(About);">A propos</a> <a onclick="ToggleDescription(CV);">CV</a></h3>
+    
+        <h1 id="askew-title">{{ site.title | escape }}</h1>
+    <h2 id="askew-author">
+        {{ site.author | escape }}
+        {% if current[1] == 'cv' %}<a href="/"><i class="fa fa-home" aria-hidden="true"></i></a>{% endif %}
+        {% if page_paths %}
+            {% for path in page_paths %}
+                {% assign my_page = site.pages | where: "path", path | first %}
+                {% if my_page.title %}
+                    {% if current[1] != 'cv' %}<a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>{% endif %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    </h2>
 </div>
 <header role="banner">
 
   <div class="wrapper">
-    {% assign default_paths = site.pages | map: "path" %}
-    {% assign page_paths = site.header_pages | default: default_paths %}
+    
   
     <!--{% if page_paths %}
       <nav class="site-nav">
