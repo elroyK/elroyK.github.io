@@ -23,7 +23,7 @@ permalink: /cv/
 
 ### Bénévolat
 
-**2017** Responsable technique à la conférence <a href="http://2017.openbelgium.be" target="_blank">Open Belgium 2017</a>
+**2017** Responsable technique à la conférence <a href="http://2017.openbelgium.be" target="_blank">Open Belgium 2017</a><br>
 **2016-2017** Designer et webmaster pour la conférence <a href="http://www.tedxuclouvain.com" target="_blank">TEDxUCLouvain 2017</a>
 
 ### Enseignement
