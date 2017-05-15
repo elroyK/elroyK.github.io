@@ -37,7 +37,7 @@ permalink: /cv/
 
 **Développement :** Pascal, C, HTML(5), CSS(3, SCSS), VBA, java, javaScript (Vanilla, ReactJS, VueJS), PHP (Vanilla, Laravel), Jekyll (Liquid, Markdown) 
 **Bases de données :** mySQL, Microsoft Office Access  
-**Graphisme :** Adobe Photoshop and Illustrator  
+**Graphisme :** Adobe Photoshop et Illustrator CC
 **Langues :**
 
 *   _Français :_ Langue maternelle
