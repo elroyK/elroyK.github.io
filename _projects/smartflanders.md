@@ -12,68 +12,10 @@ category:
 hours: 40
 ---
 
-[Intro: Popcaan]
-Haha, woii yoii!
-Done know how di ting go, a the Unruly boss
-Don'?
-Hahaha
-Press the button to begin
-Cho
-All my life
-Mi ever have mi gun so mi haffi move sharp like mi knife
-All my life
-Mi pray say when mi get wealthy a ma a mi wife
-All my life
-The system force mi
-Fi be a killer just like Rodney Price
-All my life
-No, all my life
+Durant la deuxième semaine de Pâques, j'ai travaillé pour imec sur le site de Smart Flanders, le projet de Smart Region de la Région flamande.
 
-[Verse: Popcaan]
-Wah happen to you Cobe, some bwoy doh know mi
-To how me ruff dem cah believe a grandma grow mi
-Know few Popcaan song doh, and feel dem know mi
-Four mile mi used to walk guh school, dem know man story?
-Ha! Now mi gain up all those glory
-The world is mine, the whole a it mi taking slowly
-Happy days mi call it now mi bun sad story
-Anyway mi deh inna the world mi dawgs dem round mi
-Hahaha mi laugh and collect those trophy
-Because mi deserve everything weh music gives mi
-Bwoy, unruly nuh light like Frisbee
-The dream, family live that wid me
-Oh, oh, oh, oh
-All my life mi dream fi own house, land, cars, and bikes
+Contrairement à d'autres projets où j'avais soit une liberté créative relativement étendue, ou où je travaillais avec un designer sur un projet commun, ce site réclamait que je respecte une charte d'éléments d'<abbr title="User Experience">UX</abbr> stricte. En effet, Smart Flanders étant une initiative de la Région flamande, il était obligatoire de respecter leur identité visuelle clairement définie. Mon rôle a donc été de réussir à intégrer ces éléments à un environnement Jekyll préexistant, pour faciliter l'ajout de contenu par une équipe qui n'est pas forcément composée de développeurs (Jekyll utilisant le Markdown, un langage de balisage plus simple d'accès).
 
-[Chorus: 2-D + Popcaan]
-All my life
-I'm in the stakin' bar
-I got debts, I'm a debaser
-All my life
-Saturnz about to make love
-And I'm just a heartbreaker
-All my life
-And I won't get a take in
-'Cause I'm out when I'm stakin'
-And the rings I am breaking
-Are making you a personal debt
+Ce que ce projet m'a appris, en plus des connaissances en Liquid nécessaires à la mise en place d'un site Jekyll, c'est comment travailler avec une charte UX stricte. C'est une manière complètement différente d'aborder le développement front-end, et une situation que j'aimerais éviter le plus souvent possible à l'avenir. Ce que j'aime dans le front-end, c'est qu'il allie la logique de la programmation avec le côté créatif du graphisme et du webdesign. Devoir travailler avec une charte stricte et prédéfinie signifie qu'aucune liberté artistique n'est autorisée. Le projet était très intéressant, mais je ne pouvais pas m'empêcher de me sentir un peu restreint par ces consignes.
 
-[Break: 2-D + Popcaan]
-With the holograms beside me
-I'll dance alone tonight
-In a mirrored world, are you beside me
-All my life?
-Distortion
-
-[Chorus: 2-D + Popcaan]
-All my life
-I'm in the stakin' bar
-I got debts, I'm a debaser
-All my life
-Saturnz about to make love
-And I'm just a heartbreaker
-All my life
-And I won't get a take in
-'Cause I'm out when I'm stakin'
-And the rings I am breaking
-Are making you a personal debt
+C'est également un élément clé de mon portfolio professionnel, car il touche une population plus grande, et qu'il a été réalisé pour un client plus "officiel" qu'un petit commerce ou une startup. Je suis assez fier de pouvoir dire que j'ai pu contribuer directement à la stratégie numérique de la Région flamande.

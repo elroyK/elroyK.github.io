@@ -220,6 +220,25 @@ body {
     overflow-y: auto;
     font-family: "jaf-domus";
     
+    h1 {
+        
+        font-family: "museo";
+        
+        .fa {
+            font-size: .8em;
+        }
+    }
+    
+    h2 {
+        font-family: "museo";
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+    
+    .icons .fa {
+        font-size: 1.2em;
+    }
+    
     &::-webkit-scrollbar {
         width: 12px;
         margin-left: 2px;
