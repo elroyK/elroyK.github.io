@@ -35,9 +35,9 @@ permalink: /cv/
 
 ### Compétences
 
-**Développement :** Pascal, C, HTML(5), CSS(3, SCSS), VBA, java, javaScript (Vanilla, ReactJS, VueJS), PHP (Vanilla, Laravel), Jekyll (Liquid, Markdown) 
+**Développement :** Pascal, C, HTML(5), CSS(3, SCSS), VBA, java, javaScript (Vanilla, ReactJS, VueJS), PHP (Vanilla, Laravel), Jekyll (Liquid, Markdown) <br>
 **Bases de données :** mySQL, Microsoft Office Access  
-**Graphisme :** Adobe Photoshop et Illustrator CC
+**Graphisme :** Adobe Photoshop et Illustrator CC<br>
 **Langues :**
 
 *   _Français :_ Langue maternelle
