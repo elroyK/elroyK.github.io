@@ -14,7 +14,7 @@ permalink: /cv/
 ### Expérience professionnelle
 
 **Pâques 2017** _imec_ Travail sur le front-end du <a href="https://smart.flanders.be" target="_blank">site de Smart Flanders</a>.  
-**Février-Mai 2017** _Open Knowledge Belgium_ Stage d'insertion professionnelle en tant que développeur front-end sur le projet krowd.
+**Février-Mai 2017** _Open Knowledge Belgium_ Stage d'insertion professionnelle en tant que développeur front-end sur le projet krowd.<br>
 **Novembre-Décembre 2016** _Open Knowledge Belgium_ Mise en place du front-end du <a href="https://oasis.team" target="_blank">site du projet Oasis</a> et travail sur le front-end du <a href="http://2017.openbelgium.be" target="_blank">site de la conférence Open Belgium 2017</a>.  
 **Juillet 2016** _Open Knowledge Belgium_ Participation au <a href="https://2016.summerofcode.be" target="_blank">open Summer of code 2016</a> sur le projet de CultuurConnect (LeuvenLeest) en tant que développeur front-end.  
 **Décembre 2015** _BeerLover's Louvain-la-Neuve_ Gestion d'un stand sur le marché de Noël de Louvain-la-Neuve, maintien de la caisse et service client.  
