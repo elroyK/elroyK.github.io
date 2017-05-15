@@ -21,6 +21,11 @@ permalink: /cv/
 **Juillet 2015** _Open Knowledge Belgium_ Participation au <a href="https://2015.summerofcode.be" target="_blank">open Summer of code 2015</a> sur le projet d'imec (Multimedia Lab), en tant que développeur front-end.  
 **Etés 2009 à 2014** _Partenamut/Euromut_ Jobiste au département IT, au siège social Tamaris : helpdesk, administrateur réseau, gestion de l'inventaire.  
 
+### Bénévolat
+
+**2017** Responsable technique à la conférence <a href="http://2017.openbelgium.be" target="_blank">Open Belgium 2017</a>
+**2016-2017** Designer et webmaster pour la conférence <a href="http://www.tedxuclouvain.com" target="_blank">TEDxUCLouvain 2017</a>
+
 ### Enseignement
 
 **2013-Présent** EPHEC Louvain-la-Neuve : Technologies de l'Informatique  
