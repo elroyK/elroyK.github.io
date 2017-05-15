@@ -4,9 +4,9 @@ title: CV
 permalink: /cv/
 ---
 
-### Informations personnelles
+### Informations générales
 
-**Date de naissance :** 17 Août 1993 
+**Date de naissance :** 17 Août 1993<br> 
 **<i class="fa fa-at" aria-hidden="true"> :</i>** [Me contacter !](mailto:kyngstudio@gmail.com)  
 **<i class="fa fa-github" aria-hidden="true"> :</i>** <a href="https://github.com/elroyk/" target="_blank">elroyK</a><br>
 **<i class="fa fa-linkedin" aria-hidden="true"> :</i>** <a href="https://www.linkedin.com/in/kyngstudio/" target="_blank">kyngstudio</a>
