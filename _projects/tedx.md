@@ -12,6 +12,8 @@ category:
   - calendar
   - users
 hours: 230
+proofs:
+  - http://www.tedxuclouvain.com/about/team/
 ---
 
 Enorme projet qu'est l'évènement TEDxUCLouvain.

@@ -11,6 +11,8 @@ category:
   - building
   - users
 hours: 31
+proofs:
+  - /assets/img/projects/proofs/openbelgium.png
 ---
 
 En plus d'OASIS, j'ai travaillé lors de ce premier quadrimestre sur le site de la conférence Open Belgium pour y ajouter quelques fonctions esthétiques en javascript, ainsi qu'y ajouter et styliser certains contenus.

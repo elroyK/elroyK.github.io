@@ -12,6 +12,9 @@ category:
   - calendar
   - users
 hours: 10
+proofs:
+  - https://github.com/CivicLabsBelgium/GeneralRessources/commits/master
+  - https://www.meetup.com/Civic-Lab-Brussels/members/?op=leaders
 ---
 
 En parallèle à mon stage, j'ai aidé Open Knowledge Belgium (l'ASBL qui m'accueillait) à mettre sur pied un nouveau projet : Civiclabs, des ateliers citoyens, dont le premier chapitre est tenu de manière bihebdomadaire à BeCentral, un espace de travail collaboratif au dessus de la gare de Bruxelles-Centrale.

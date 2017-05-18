@@ -53,7 +53,8 @@ layout: default
     </a>
     <div class="project-description {{ project.textcolor }}" id="descr{{ forloop.index }}" style="background-color: #{{ project.color }}">
         <h1>{{ project.name }} <a href="{{ project.website }}" target="_blank" style="border-bottom: none !important;"><i class="fa fa-globe" aria-hidden="true"></i></a></h1>
-        <strong>Temps consacré au projet :</strong> 10 heures (réel : <em>{{ project.hours }}</em> heures)<br>
+        <strong>Temps consacré au projet :</strong> {% if project.hours > 10 %}10{% else %}{{ project.hours }}{% endif %} heures {% if project.hours > 10 %}(réel : <em>{{ project.hours }}</em> heures){% endif %}<br>
+        <strong>Preuves : </strong>{% for proof in project.proofs %} <a href="{{ proof }}" target="_blank">[{{ forloop.index }}]</a>{% endfor %}<br>
         <div class="icons">
             {% for icon in project.category %}
                 <i class="fa fa-{{icon}}" aria-hidden="true"></i>

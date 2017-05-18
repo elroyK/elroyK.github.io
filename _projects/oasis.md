@@ -9,6 +9,8 @@ category:
   - desktop
   - building
 hours: 20
+proofs:
+  - /assets/img/projects/proofs/oasis.png
 ---
 Durant le premier quadrimestre, j'ai travaillé un jour par semaine pendant 5 semaines en tant que développeur front-end pour Open Knowledge Belgium sur deux projets. Le premier de ces projets est OASIS.
 

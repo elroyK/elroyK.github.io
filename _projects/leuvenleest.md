@@ -10,6 +10,8 @@ category:
   - mobile
   - building
 hours: 122
+proofs:
+  - https://github.com/osoc16/LeuvenLeest-frontend/graphs/contributors
 ---
 
 Lors de ma deuxième participation au open Summer of code en juillet 2016, j'ai rejoint l'équipe CultuurConnect, qui travaillait sur deux projets : Klijnpas, une plateforme visant à mettre en contact des babysitters et des parents, et LeuvenLeest.

@@ -10,6 +10,9 @@ category:
   - desktop
   - building
 hours: 40
+proofs:
+  - https://github.com/smartflanders/smartflanders.github.io/graphs/contributors
+  - https://github.com/smartflanders/smartflanders.github.io/commits/master
 ---
 
 Durant la deuxième semaine de Pâques, j'ai travaillé pour imec sur le site de Smart Flanders, le projet de Smart Region de la Région flamande.
@@ -19,3 +22,7 @@ Contrairement à d'autres projets où j'avais soit une liberté créative relati
 Ce que ce projet m'a appris, en plus des connaissances en Liquid nécessaires à la mise en place d'un site Jekyll, c'est comment travailler avec une charte UX stricte. C'est une manière complètement différente d'aborder le développement front-end, et une situation que j'aimerais éviter le plus souvent possible à l'avenir. Ce que j'aime dans le front-end, c'est qu'il allie la logique de la programmation avec le côté créatif du graphisme et du webdesign. Devoir travailler avec une charte stricte et prédéfinie signifie qu'aucune liberté artistique n'est autorisée. Le projet était très intéressant, mais je ne pouvais pas m'empêcher de me sentir un peu restreint par ces consignes.
 
 C'est également un élément clé de mon portfolio professionnel, car il touche une population plus grande, et qu'il a été réalisé pour un client plus "officiel" qu'un petit commerce ou une startup. Je suis assez fier de pouvoir dire que j'ai pu contribuer directement à la stratégie numérique de la Région flamande.
+
+Pour la preuve de ma participation, je tiens à préciser deux choses :
+* Les commits en tant que Open Knowledge Belgium du 10 avril sont de moi, et ont été fait sur un ordinateur que l'ASBL Open Knowledge Belgium m'a prêté lorsque le mien était en réparation
+* Je peux fournir une copie de mon contrat et des échanges par mail qui ont mené à mon recrutement si nécessaire
